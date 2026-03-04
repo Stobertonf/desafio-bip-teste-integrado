@@ -1,0 +1,4 @@
+com\example\backend\model\Beneficiario.class
+com\example\backend\BeneficioEJBService.class
+com\example\backend\model\Beneficio.class
+com\example\backend\exception\SaldoInsuficienteException.class

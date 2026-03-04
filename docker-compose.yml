@@ -1,0 +1,38 @@
+version: "3.8"
+
+services:
+  postgres-desafio:
+    image: postgres:13
+    container_name: postgres-desafio
+    environment:
+      POSTGRES_DB: beneficios_db
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5433:5432" # PORTA DIFERENTE (5433) pra não conflitar
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./db/schema.sql:/docker-entrypoint-initdb.d/1-schema.sql
+      - ./db/seed.sql:/docker-entrypoint-initdb.d/2-seed.sql
+    networks:
+      - desafio-network
+
+  pgadmin-desafio:
+    image: dpage/pgadmin4
+    container_name: pgadmin-desafio
+    environment:
+      PGADMIN_DEFAULT_EMAIL: admin@admin.com
+      PGADMIN_DEFAULT_PASSWORD: admin
+    ports:
+      - "5050:80"
+    networks:
+      - desafio-network
+    depends_on:
+      - postgres-desafio
+
+volumes:
+  postgres_data:
+
+networks:
+  desafio-network:
+    driver: bridge
