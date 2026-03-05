@@ -1,0 +1,22 @@
+﻿.active {
+  font-weight: bold;
+  background-color: rgba(255,255,255,0.1);
+  border-radius: 4px;
+}
+
+.navbar-brand {
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  font-size: 1.1rem;
+  margin: 0 5px;
+  padding: 8px 15px !important;
+  transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}

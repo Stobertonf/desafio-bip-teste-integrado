@@ -1,0 +1,46 @@
+﻿<div class="container mt-4">
+  <h2>Lista de Benefícios</h2>
+  
+  <div class="mb-3">
+    <a routerLink="/transferir" class="btn btn-primary">Nova Transferência</a>
+  </div>
+
+  <div *ngIf="loading" class="alert alert-info">
+    Carregando...
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger">
+    {{ error }}
+  </div>
+
+  <table class="table table-striped" *ngIf="!loading && beneficios.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Beneficiário</th>
+        <th>Tipo</th>
+        <th>Valor</th>
+        <th>Saldo</th>
+        <th>Data de Concessão</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let beneficio of beneficios">
+        <td>{{ beneficio.id }}</td>
+        <td>{{ beneficio.beneficiarioNome }}</td>
+        <td>{{ beneficio.tipo }}</td>
+        <td>R$ {{ formatarValor(beneficio.valor) }}</td>
+        <td>R$ {{ formatarValor(beneficio.saldo || 0) }}</td>
+        <td>{{ beneficio.dataConcessao | date:'dd/MM/yyyy' }}</td>
+        <td>
+          <button (click)="deletar(beneficio.id!)" class="btn btn-sm btn-danger">Deletar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && beneficios.length === 0" class="alert alert-warning">
+    Nenhum benefício encontrado.
+  </div>
+</div>
