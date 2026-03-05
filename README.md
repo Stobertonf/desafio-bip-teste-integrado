@@ -145,61 +145,7 @@ POST /api/beneficios/transferir
   "valor": 100.00
 }
 
-## 🎨 Interface do Usuário
-
-### 📋 Lista de Benefícios
-
-<p align="center">
-<img src="docs/images/beneficios-list.png" width="800">
-</p>
-
----
-
-### 🗑️ Excluindo um Registro
-
-<p align="center">
-<img src="docs/images/beneficios-excluindo.png" width="800">
-</p>
-
----
-
-### ✅ Registro Excluído com Sucesso
-
-<p align="center">
-<img src="docs/images/beneficios-excluido.png" width="800">
-</p>
-
----
-
-### 💸 Formulário de Transferência
-
-<p align="center">
-<img src="docs/images/transferencia-form.png" width="800">
-</p>
-
----
-
-### 🔍 Transferência - Selecionando Benefícios
-
-<p align="center">
-<img src="docs/images/transferencia-selecao.png" width="800">
-</p>
-
----
-
-### 💰 Transferência - Valor Preenchido
-
-<p align="center">
-<img src="docs/images/transferencia-valor.png" width="800">
-</p>
-
----
-
-### 🎉 Transferência Realizada com Sucesso
-
-<p align="center">
-<img src="docs/images/transferencia-sucesso.png" width="800">
-</p>
+beneficios-excluido
 
 ---
 
