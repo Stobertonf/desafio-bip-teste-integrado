@@ -147,6 +147,8 @@ POST /api/beneficios/transferir
 
 ## 🎨 Interface do Usuário
 
+## 🎨 Interface do Usuário
+
 ### Página Inicial - Lista de Benefícios
 ![Lista de Benefícios](docs/images/Página_Inicial_Benefícios.png)
 
