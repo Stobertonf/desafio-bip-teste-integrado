@@ -1,4 +1,4 @@
-package com.example.backend.service;
+﻿package com.example.backend.service;
 
 import com.example.backend.dto.BeneficioDTO;
 import com.example.backend.dto.TransferenciaRequest;
@@ -28,24 +28,24 @@ public class BeneficioService {
     private BeneficiarioRepository beneficiarioRepository;
     
     public List<BeneficioDTO> listarTodos() {
-        LOGGER.info("Listando todos os benef?cios");
+        LOGGER.info("Listando todos os benefícios");
         return beneficioRepository.findAll().stream()
             .map(this::toDTO)
             .collect(Collectors.toList());
     }
     
     public BeneficioDTO buscarPorId(Long id) {
-        LOGGER.info("Buscando benef?cio ID: " + id);
+        LOGGER.info("Buscando benefício ID: " + id);
         Beneficio beneficio = beneficioRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Benef?cio n?o encontrado: " + id));
+            .orElseThrow(() -> new RuntimeException("Benefício não encontrado: " + id));
         return toDTO(beneficio);
     }
     
     @Transactional
     public BeneficioDTO criar(BeneficioDTO dto) {
-        LOGGER.info("Criando benef?cio para benefici?rio: " + dto.getBeneficiarioId());
+        LOGGER.info("Criando benefício para beneficiário: " + dto.getBeneficiarioId());
         Beneficiario beneficiario = beneficiarioRepository.findById(dto.getBeneficiarioId())
-            .orElseThrow(() -> new RuntimeException("Benefici?rio n?o encontrado"));
+            .orElseThrow(() -> new RuntimeException("Beneficiário não encontrado"));
         
         Beneficio beneficio = new Beneficio();
         beneficio.setBeneficiario(beneficiario);
@@ -59,9 +59,9 @@ public class BeneficioService {
     
     @Transactional
     public BeneficioDTO atualizar(Long id, BeneficioDTO dto) {
-        LOGGER.info("Atualizando benef?cio ID: " + id);
+        LOGGER.info("Atualizando benefício ID: " + id);
         Beneficio beneficio = beneficioRepository.findById(id)
-            .orElseThrow(() -> new RuntimeException("Benef?cio n?o encontrado"));
+            .orElseThrow(() -> new RuntimeException("Benefício não encontrado"));
         
         beneficio.setTipo(dto.getTipo());
         beneficio.setValor(dto.getValor());
@@ -72,25 +72,25 @@ public class BeneficioService {
     
     @Transactional
     public void deletar(Long id) {
-        LOGGER.info("Deletando benef?cio ID: " + id);
+        LOGGER.info("Deletando benefício ID: " + id);
         beneficioRepository.deleteById(id);
     }
     
     @Transactional(rollbackFor = Exception.class)
     public void transferir(TransferenciaRequest request) throws SaldoInsuficienteException {
-        LOGGER.info("Processando transfer?ncia: " + request);
+        LOGGER.info("Processando transferência");
         
         Beneficio origem = beneficioRepository.findById(request.getOrigemId())
-            .orElseThrow(() -> new RuntimeException("Benef?cio origem n?o encontrado: " + request.getOrigemId()));
+            .orElseThrow(() -> new RuntimeException("Benefício origem não encontrado: " + request.getOrigemId()));
         
         Beneficio destino = beneficioRepository.findById(request.getDestinoId())
-            .orElseThrow(() -> new RuntimeException("Benef?cio destino n?o encontrado: " + request.getDestinoId()));
+            .orElseThrow(() -> new RuntimeException("Benefício destino não encontrado: " + request.getDestinoId()));
         
         LOGGER.info("Saldo origem: " + origem.getSaldo() + ", Saldo destino: " + destino.getSaldo());
         
         if (origem.getSaldo().compareTo(request.getValor()) < 0) {
             throw new SaldoInsuficienteException(
-                "Saldo insuficiente. Dispon?vel: " + origem.getSaldo() + ", Requerido: " + request.getValor()
+                "Saldo insuficiente. Disponível: " + origem.getSaldo() + ", Requerido: " + request.getValor()
             );
         }
         
@@ -100,7 +100,7 @@ public class BeneficioService {
         beneficioRepository.save(origem);
         beneficioRepository.save(destino);
         
-        LOGGER.info("Transfer?ncia conclu?da com sucesso!");
+        LOGGER.info("Transferência concluída com sucesso!");
     }
     
     private BeneficioDTO toDTO(Beneficio beneficio) {
