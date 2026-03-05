@@ -262,5 +262,5 @@ Documentação completa
 Este projeto foi desenvolvido para fins de avaliação técnica.
 
 👨‍💻 Autor
-[Stoberton Francisco] - [stobertonf@gmail.c]
+[Stoberton Francisco] - [stobertonf@gmail.com]
 ```
