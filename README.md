@@ -148,28 +148,28 @@ POST /api/beneficios/transferir
 ## 🎨 Interface do Usuário
 
 ### Página Inicial - Lista de Benefícios
-![Lista de Benefícios](docs/images/Página_Inicial_Benefícios.png)
+![Lista de Benefícios](docs/images/beneficios-list.png)
 
 ### Excluindo um Registro
-![Excluindo Registro](docs/images/Página_Inicial_Benefícios_Excluindo_Registro.png)
+![Excluindo Registro](docs/images/beneficios-excluindo.png)
 
 ### Registro Excluído com Sucesso
-![Registro Excluído](docs/images/Página_Inicial_Benefícios_Registro_Excluido.png)
+![Registro Excluído](docs/images/beneficios-excluido.png)
 
 ### Formulário de Transferência
-![Transferência](docs/images/Página_Inicial_Transferências.png)
+![Transferência](docs/images/transferencia-form.png)
 
 ### Transferência - Selecionando Benefícios
-![Selecionando Benefícios](docs/images/Página_Inicial_Transferências_1.png)
+![Selecionando Benefícios](docs/images/transferencia-selecao.png)
 
 ### Transferência - Valor Preenchido
-![Valor Preenchido](docs/images/Página_Inicial_Transferências_2.png)
+![Valor Preenchido](docs/images/transferencia-valor.png)
 
 ### Transferência Realizada com Sucesso
-![Sucesso](docs/images/Página_Inicial_Transferência_Realizada_Com_Sucesso.png)
+![Sucesso](docs/images/transferencia-sucesso.png)
 
 ### Validação de Saldo Insuficiente
-![Saldo Insuficiente](docs/images/Página_Inicial_Transferências_Saldo_Insuficiente.png)
+![Saldo Insuficiente](docs/images/transferencia-erro.png)
 
 🐞 Bug do EJB Corrigido
 O desafio incluía um bug no serviço EJB onde transferências eram realizadas sem validação de saldo e sem locking, podendo gerar inconsistências.
