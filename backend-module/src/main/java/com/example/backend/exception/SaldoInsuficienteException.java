@@ -1,4 +1,4 @@
-package com.example.backend.exception;
+﻿package com.example.backend.exception;
 
 public class SaldoInsuficienteException extends Exception {
     public SaldoInsuficienteException(String message) {
