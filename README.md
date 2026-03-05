@@ -144,18 +144,32 @@ POST /api/beneficios/transferir
   "destinoId": 2,
   "valor": 100.00
 }
-🎨 Interface do Usuário
-Lista de Benefícios
-https://docs/images/lista-beneficios.png
 
-Formulário de Transferência
-https://docs/images/transferencia.png
+## 🎨 Interface do Usuário
 
-Mensagem de Sucesso
-https://docs/images/sucesso.png
+### Página Inicial - Lista de Benefícios
+![Lista de Benefícios](docs/images/Página_Inicial_Benefícios.png)
 
-Validação de Saldo
-https://docs/images/erro-saldo.png
+### Excluindo um Registro
+![Excluindo Registro](docs/images/Página_Inicial_Benefícios_Excluindo_Registro.png)
+
+### Registro Excluído com Sucesso
+![Registro Excluído](docs/images/Página_Inicial_Benefícios_Registro_Excluido.png)
+
+### Formulário de Transferência
+![Transferência](docs/images/Página_Inicial_Transferências.png)
+
+### Transferência - Selecionando Benefícios
+![Selecionando Benefícios](docs/images/Página_Inicial_Transferências_1.png)
+
+### Transferência - Valor Preenchido
+![Valor Preenchido](docs/images/Página_Inicial_Transferências_2.png)
+
+### Transferência Realizada com Sucesso
+![Sucesso](docs/images/Página_Inicial_Transferência_Realizada_Com_Sucesso.png)
+
+### Validação de Saldo Insuficiente
+![Saldo Insuficiente](docs/images/Página_Inicial_Transferências_Saldo_Insuficiente.png)
 
 🐞 Bug do EJB Corrigido
 O desafio incluía um bug no serviço EJB onde transferências eram realizadas sem validação de saldo e sem locking, podendo gerar inconsistências.
@@ -293,4 +307,4 @@ Docker, Spring e Angular pela documentação excelente
 
 Desafio concluído com sucesso! 🚀🔥
 
-text
+
