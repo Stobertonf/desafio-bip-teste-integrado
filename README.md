@@ -144,23 +144,47 @@ POST /api/beneficios/transferir
   "destinoId": 2,
   "valor": 100.00
 }
-🎨 Interface do Usuário
-📋 Lista de Benefícios
-<p align="center"> <img src="docs/images/beneficios-list.png" width="800"> </p>
-🗑️ Excluindo um Registro
-<p align="center"> <img src="docs/images/beneficios-excluindo.png" width="800"> </p>
-✅ Registro Excluído com Sucesso
-<p align="center"> <img src="docs/images/beneficios-excluido.png" width="800"> </p>
-💸 Formulário de Transferência
-<p align="center"> <img src="docs/images/transferencia-form.png" width="800"> </p>
-🔍 Transferência - Selecionando Benefícios
-<p align="center"> <img src="docs/images/transferencia-selecao.png" width="800"> </p>
-💰 Transferência - Valor Preenchido
-<p align="center"> <img src="docs/images/transferencia-valor.png" width="800"> </p>
-🎉 Transferência Realizada com Sucesso
-<p align="center"> <img src="docs/images/transferencia-sucesso.png" width="800"> </p>
-⚠️ Validação de Saldo Insuficiente
-<p align="center"> <img src="docs/images/transferencia-erro.png" width="800"> </p>
+## 🎨 Interface do Usuário
+
+### Página Inicial - Lista de Benefícios
+<p align="center">
+  <img src="./docs/images/beneficios-list.png" width="900">
+</p>
+
+### Excluindo um Registro
+<p align="center">
+  <img src="./docs/images/beneficios-excluindo.png" width="900">
+</p>
+
+### Registro Excluído com Sucesso
+<p align="center">
+  <img src="./docs/images/beneficios-excluido.png" width="900">
+</p>
+
+### Formulário de Transferência
+<p align="center">
+  <img src="./docs/images/transferencia-form.png" width="900">
+</p>
+
+### Transferência - Selecionando Benefícios
+<p align="center">
+  <img src="./docs/images/transferencia-selecao.png" width="900">
+</p>
+
+### Transferência - Valor Preenchido
+<p align="center">
+  <img src="./docs/images/transferencia-valor.png" width="900">
+</p>
+
+### Transferência Realizada com Sucesso
+<p align="center">
+  <img src="./docs/images/transferencia-sucesso.png" width="900">
+</p>
+
+### Validação de Saldo Insuficiente
+<p align="center">
+  <img src="./docs/images/transferencia-erro.png" width="900">
+</p>
 🐞 Bug do EJB Corrigido
 O desafio incluía um bug no serviço EJB onde transferências eram realizadas sem validação de saldo e sem locking, podendo gerar inconsistências.
 
