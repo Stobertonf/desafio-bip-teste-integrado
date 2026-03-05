@@ -1,4 +1,12 @@
+com\example\backend\repository\BeneficioRepository.class
+com\example\backend\service\BeneficioService.class
+com\example\backend\config\EJBConfig.class
+com\example\backend\BackendApplication.class
 com\example\backend\model\Beneficiario.class
-com\example\backend\BeneficioEJBService.class
 com\example\backend\model\Beneficio.class
+com\example\backend\BeneficioController.class
+com\example\backend\dto\TransferenciaRequest.class
+com\example\backend\repository\BeneficiarioRepository.class
+com\example\backend\dto\BeneficioDTO.class
+com\example\backend\BeneficioEJBService.class
 com\example\backend\exception\SaldoInsuficienteException.class

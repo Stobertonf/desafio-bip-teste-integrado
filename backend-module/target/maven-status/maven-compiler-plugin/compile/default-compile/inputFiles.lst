@@ -1,4 +1,12 @@
 C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\model\Beneficio.java
 C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\exception\SaldoInsuficienteException.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\BeneficioController.java
 C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\model\Beneficiario.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\config\EJBConfig.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\dto\BeneficioDTO.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\dto\TransferenciaRequest.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\service\BeneficioService.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\BackendApplication.java
 C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\BeneficioEJBService.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\repository\BeneficiarioRepository.java
+C:\Ajuda\Work\Projects\Desafios\2026\desafio-bip-teste-integrado\backend-module\src\main\java\com\example\backend\repository\BeneficioRepository.java
