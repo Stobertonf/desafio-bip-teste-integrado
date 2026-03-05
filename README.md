@@ -147,29 +147,67 @@ POST /api/beneficios/transferir
 
 ## 🎨 Interface do Usuário
 
-### Página Inicial - Lista de Benefícios
-![Lista de Benefícios](docs/images/beneficios-list.png)
+### 📋 Lista de Benefícios
 
-### Excluindo um Registro
-![Excluindo Registro](docs/images/beneficios-excluindo.png)
+<p align="center">
+<img src="docs/images/beneficios-list.png" width="800">
+</p>
 
-### Registro Excluído com Sucesso
-![Registro Excluído](docs/images/beneficios-excluido.png)
+---
 
-### Formulário de Transferência
-![Transferência](docs/images/transferencia-form.png)
+### 🗑️ Excluindo um Registro
 
-### Transferência - Selecionando Benefícios
-![Selecionando Benefícios](docs/images/transferencia-selecao.png)
+<p align="center">
+<img src="docs/images/beneficios-excluindo.png" width="800">
+</p>
 
-### Transferência - Valor Preenchido
-![Valor Preenchido](docs/images/transferencia-valor.png)
+---
 
-### Transferência Realizada com Sucesso
-![Sucesso](docs/images/transferencia-sucesso.png)
+### ✅ Registro Excluído com Sucesso
 
-### Validação de Saldo Insuficiente
-![Saldo Insuficiente](docs/images/transferencia-erro.png)
+<p align="center">
+<img src="docs/images/beneficios-excluido.png" width="800">
+</p>
+
+---
+
+### 💸 Formulário de Transferência
+
+<p align="center">
+<img src="docs/images/transferencia-form.png" width="800">
+</p>
+
+---
+
+### 🔍 Transferência - Selecionando Benefícios
+
+<p align="center">
+<img src="docs/images/transferencia-selecao.png" width="800">
+</p>
+
+---
+
+### 💰 Transferência - Valor Preenchido
+
+<p align="center">
+<img src="docs/images/transferencia-valor.png" width="800">
+</p>
+
+---
+
+### 🎉 Transferência Realizada com Sucesso
+
+<p align="center">
+<img src="docs/images/transferencia-sucesso.png" width="800">
+</p>
+
+---
+
+### ⚠️ Validação de Saldo Insuficiente
+
+<p align="center">
+<img src="docs/images/transferencia-erro.png" width="800">
+</p>
 
 🐞 Bug do EJB Corrigido
 O desafio incluía um bug no serviço EJB onde transferências eram realizadas sem validação de saldo e sem locking, podendo gerar inconsistências.
