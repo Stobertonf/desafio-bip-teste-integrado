@@ -144,17 +144,23 @@ POST /api/beneficios/transferir
   "destinoId": 2,
   "valor": 100.00
 }
-
-beneficios-excluido
-
----
-
-### ⚠️ Validação de Saldo Insuficiente
-
-<p align="center">
-<img src="docs/images/transferencia-erro.png" width="800">
-</p>
-
+🎨 Interface do Usuário
+📋 Lista de Benefícios
+<p align="center"> <img src="docs/images/beneficios-list.png" width="800"> </p>
+🗑️ Excluindo um Registro
+<p align="center"> <img src="docs/images/beneficios-excluindo.png" width="800"> </p>
+✅ Registro Excluído com Sucesso
+<p align="center"> <img src="docs/images/beneficios-excluido.png" width="800"> </p>
+💸 Formulário de Transferência
+<p align="center"> <img src="docs/images/transferencia-form.png" width="800"> </p>
+🔍 Transferência - Selecionando Benefícios
+<p align="center"> <img src="docs/images/transferencia-selecao.png" width="800"> </p>
+💰 Transferência - Valor Preenchido
+<p align="center"> <img src="docs/images/transferencia-valor.png" width="800"> </p>
+🎉 Transferência Realizada com Sucesso
+<p align="center"> <img src="docs/images/transferencia-sucesso.png" width="800"> </p>
+⚠️ Validação de Saldo Insuficiente
+<p align="center"> <img src="docs/images/transferencia-erro.png" width="800"> </p>
 🐞 Bug do EJB Corrigido
 O desafio incluía um bug no serviço EJB onde transferências eram realizadas sem validação de saldo e sem locking, podendo gerar inconsistências.
 
@@ -249,25 +255,25 @@ Testes	15%	✅
 Documentação	10%	✅
 Frontend	10%	✅
 ✅ Checklist do Desafio
-Docker configurado com PostgreSQL
+✅ Docker configurado com PostgreSQL
 
-Scripts SQL (schema e seed) executados
+✅ Scripts SQL (schema e seed) executados
 
-Bug do EJB corrigido (validação + locking)
+✅ Bug do EJB corrigido (validação + locking)
 
-Backend Spring Boot com CRUD completo
+✅ Backend Spring Boot com CRUD completo
 
-Frontend Angular com componentes funcionais
+✅ Frontend Angular com componentes funcionais
 
-Transferência funcionando com regras de negócio
+✅ Transferência funcionando com regras de negócio
 
-Tratamento de erros e mensagens amigáveis
+✅ Tratamento de erros e mensagens amigáveis
 
-Interface responsiva com Bootstrap
+✅ Interface responsiva com Bootstrap
 
-Documentação completa com screenshots
+✅ Documentação completa com screenshots
 
-Testes manuais validados
+✅ Testes manuais validados
 
 🤝 Contribuição
 Este projeto foi desenvolvido para fins de avaliação técnica. Contribuições são bem-vindas através de Pull Requests.
@@ -277,7 +283,6 @@ Este projeto está sob a licença MIT. Veja o arquivo LICENSE para mais detalhes
 
 👨‍💻 Autor
 Stoberton Francisco
-
 GitHub: @Stobertonf
 
 🙏 Agradecimentos
@@ -290,5 +295,3 @@ Docker, Spring e Angular pela documentação excelente
 📌 Última atualização: 05/03/2026
 
 Desafio concluído com sucesso! 🚀🔥
-
-
